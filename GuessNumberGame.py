@@ -1,11 +1,8 @@
-#Guessing Game
+import random                  
+rng = random.Random()          
+number = rng.randrange(1, 11) #get random number between 1 and 10
 
-
-import random                   # We cover random numbers in the
-rng = random.Random()           #  modules chapter, so peek ahead.
-number = rng.randrange(1, 11) # Get random number between [1 and 1000).
-
-guesses = 0
+guesses = 0 #count the number of guesses
 
 while True:
     input_from_user = int(input("Guess the number between 1 and 10: (enter 0 to exit) "))
